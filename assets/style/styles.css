@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #8598df;
+}
+h1 {
+  font-family: "Rubik Burned", system-ui;
+  color: white;
+}
+.icono {
+  width: 5em;
+  height: 5em;
+  margin: 0px 20px 0px 30px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: black;
+  font-family: "Rubik Burned", system-ui;
+  display: flex;
+  align-items: center;
+}
+.aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.aside li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.aside a {
+  text-decoration: none;
+}
+.aside p {
+  color: white;
+  font-size: 30px;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: black;
+  gap: 20px;
+}
+.footer {
+  grid-area: footer;
+  background-color: #8598df;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.container {
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+.card {
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: #8598df 10px 10px 30px;
+  position: relative;
+  margin: 30px 30px;
+}
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+.info-back {
+  background-color: #8598df;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  position: absolute;
+  height: 120%;
+  transform: rotatex(180deg);
+  transition: all 1s ease-in;
+  display: flex;
+  align-items: center;
+  box-shadow: black 20px 20px 40px;
+}
+.info-back p {
+  margin: 5px;
+  color: white;
+}
+
+.card:hover .info-back {
+  transform: rotateY(0deg);
+}
+h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+i {
+  margin: 30px;
+}
