@@ -113,3 +113,17 @@ h3 {
 i {
   margin: 30px;
 }
+/* @media (max-width: 576px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "aside" "main" "footer";
+  }
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+} */
