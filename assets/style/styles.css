@@ -131,8 +131,13 @@ i {
     font-size: 20px;
     margin-right: 10px;
   }
+  .info-back p {
+    margin: 5px;
+    color: white;
+    font-size: 0.8em;
+  }
   .info-back {
-    height: 120%;
+    height: 130%;
   }
 }
 @media (min-width: 576px) {
